@@ -24,22 +24,6 @@
 
  /* Main Game Box Context */
 
- .inxsBanner {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    color:#2D2A2A;
-
-}
-
-#inxsBox {
-    background-color: salmon;
-}
-
-
 /* Main Game Background*/
  .background {
     width: 100%;
@@ -49,7 +33,44 @@
     background-size: 100% auto;
 }
 
+/* Instruciton Baner */
+.inxsBanner {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color:#2D2A2A;
+}
 
+#inxsBox {
+    background-color: salmon;
+}
+
+/* Wins, Goal, Score, Losses */
+
+.scoreBox {
+    height: 150px;
+    background-color: yellowgreen;
+    border: solid 2px #666;
+    margin-top: 15px;
+}
+
+.smallboxtext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #2D2A2A;
+    text-align: center;
+}
+
+.smallboxnumbers {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #2D2A2A;
+    text-align: center;
+    border: 1px solid #666;
+}
 
 
  /* Footer*/
