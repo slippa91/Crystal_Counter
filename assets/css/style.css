@@ -1,0 +1,56 @@
+.head {
+    font-family: 'Merriweather Sans', sans-serif;;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    border-bottom: solid 5px #666;
+}
+
+ /* Name element */
+ .banner {
+     padding: 0;
+ }
+
+ .name {
+    background-color: #102dd6;
+    color: #FDFEFE;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    height: auto;
+    margin-bottom: 0;   
+ }
+
+
+ /* Main Game Box Context */
+
+/* Main Game Background*/
+ .background {
+    width: 100%;
+    margin: 0 auto;
+    height: 600px;
+    background-image: url("../images/bright_squares.png");
+    background-size: 100% auto;
+}
+
+
+
+
+ /* Footer*/
+
+ .foot {
+    width: 100%;
+    margin: 0 auto;
+    height: 60px;
+    background-color: #666;
+    bottom: 0;
+    border-top: 5px solid #102dd6;
+    border-bottom: 5px solid #102dd6;
+}
+
+.crtext {
+    font-family: 'Signika Negative', sans-serif;
+    color: #FDFEFE;
+    text-align: center;
+    margin-top: 10px;
+}
