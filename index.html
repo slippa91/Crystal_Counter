@@ -33,10 +33,17 @@
 
             <div class="row background">
 
+                <!-- Direction Box -->
+                <div class="row directionsBox">
+                        <div class="col-xs-12 col-md-10 col-md-offset-1" id="dircBox">
+                                <p id="dircText">Try to match your score to the Goal Score by pressing the crystals below.</p>
+                        </div>
+                </div>
+
                 <!-- Instructions Box -->
                 <div class="row inxsBanner">
                     <div class=" col-xs-12 col-md-8 col-md-offset-2" id="inxsBox">
-                            <p id="inxsText">Press any key to begin playing.</p>
+                            <p id="inxsText">Press the blue gem to begin playing.</p>
                     </div>
 
                 </div>
@@ -82,15 +89,21 @@
 
                 </div>
 
-                <!-- Gems -->
+                <!-- Click Gems -->
                 <div class="row">
+                        <div class="clickCrystals">
+                    <button id="crystal1" class="btn positionCrystal crystal">Green</button>
+                    <button id="crystal2" class="btn positionCrystal crystal">Red</button>
+                    <button id="crystal3" class="btn positionCrystal crystal">Purple</button>
+                    <button id="crystal4" class="btn positionCrystal crystal">Yellow</button>
+                        </div>
+                </div>
 
-                    <button id="crystal1" class="btn positionLeft crystal">Crystal Green</button>
-                    <button id="crystal2" class="btn positionOther crystal">Crystal Red</button>
-                    <button id="crystal3" class="btn positionOther crystal">Crystal Purple</button>
-                    <button id="crystal4" class="btn positionOther crystal">Crystal Yellow</button>
-
-
+                <!-- Blue Gem -->
+                <div class="row">
+                        <div class="startCrystal">
+                    <button id="blueCrystal" class="btn positionCenter">Blue</button>  
+                        </div>
                 </div>
 
 

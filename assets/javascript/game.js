@@ -3,72 +3,95 @@
 $(document).ready(function() {
 
 var wins = 0;
-var losses = 0;
+var loss = 0;
+var gemSum;
+var goalNumber;
 
 //Start of Game
 
-var startGame = function(event){
+        var startGame = function() {
 
-var gemPress;
-var gemSum = 0;
+                goalNumber = 0;
+                gemSum = 0;
+                $("#goalNum").text(0); 
+                $("#scoreNum").text(0); 
+                $("#inxsText").text("Press the colored gems to generate your score.");
+} 
 
-//id goalNum
-var goalNumber = function() {
-    min = Math.ceil(19);
-    max = Math.floor(120);
-    return Math.floor(Math.random() * (120 - 19 + 1)) +19;   
-}
-
-$("#goalNum").text(goalNumber);  
-
-// id crystal#
-var crystalNumber = function() {
-     min = Math.ceil(1);
-    max = Math.floor(12);
-    return (Math.floor(Math.random() * (12 - 1 + 1)) +1);
-    }
+startGame();
 
 
-for (i = 0; i < 4; i++) {
-        var crystalValue = crystalNumber();
-        $("#crystal" + (i + 1)).text(crystalValue);
-        $("#crystal" + (i + 1)).attr("crystal-val", crystalValue)
+        var createGoal = function() {
+                min = Math.ceil(19);
+                max = Math.floor(120);
+                return Math.floor(Math.random() * (120 - 19 + 1)) +19;   
+        }
+        
+createGoal();
+        
+        goalNumber = createGoal();
+        console.log(goalNumber);
+        $("#goalNum").text(goalNumber); 
 
-}
+
+        var crystalNumber = function() {
+                min = Math.ceil(1);
+                max = Math.floor(12);
+                return (Math.floor(Math.random() * (12 - 1 + 1)) +1);
+        }
+
+        for (i = 0; i < 4; i++) {
+                var crystalValue = crystalNumber();
+                //console.log(crystalValue);
+                $("#crystal" + (i + 1)).text(crystalValue);
+                $("#crystal" + (i + 1)).attr("crystal-val", crystalValue);
+        }
 
 // crystal calculations
 
-var chooseCrystal = function() {
-    alert("crystal clicked");
+        var chooseCrystal = function() {
+           
+                var gemPress = parseInt($(this).attr("crystal-val"));
+                                console.log($(this).attr("crystal-val"));
+                                console.log(gemPress);
+                        
+                         gemSum = gemSum + gemPress;
+                                console.log(gemSum);
+                        $("#scoreNum").text(gemSum);
 
-    gemPress = parseInt($(this).attr("crystal-val"));
-    console.log($(this).attr("crystal-val"));
-    gemSum = gemSum + gemPress;
-    $("#scoreNum").text(gemSum);
+
+                var compareScores = function() {
+                        console.log(goalNumber);
+                        console.log(gemSum);
+                        if (goalNumber === gemSum) {
+                                alert("Wins");
+                                wins++;
+                                $("#winsNum").text(wins);
+                                $("#inxsText").text("You win! Press the blue gem if you want to play again.");
+
+                        } else if (goalNumber < gemSum) {
+                                alert("Loss");
+                                loss++;
+                                console.log(loss);
+                                $("#lossNum").text(loss);
+                                $("#inxsText").text("You lose! Press the blue gem if you want to play again");
+
+                        } else {}
+
+                }
+                compareScores();
 
 }
+$(".crystal").on("click", chooseCrystal);
 
 
-
-    // if (gemSum < goalNumber) {
-    //     $("#scoreNum").text(gemSum);
-    // } else if (gemSum === goalNumber) {
-    //     wins++;
-    //     $("#winsNum").text(wins);
-    //     $().text("You win! Please press 'Enter' to play again.")
-    // }
+$("#blueCrystal").on("click", startGame);
 
 
 
 
-document.removeEventListener("click", startGame);
-$(".crystal").on("click", chooseCrystal)
-
-
-
-} // startGame close
-
-document.addEventListener("click", startGame);
+//document.removeEventListener("click", startGame);
+//document.addEventListener("click", startGame);
 
 
 }); //readyFunction close
