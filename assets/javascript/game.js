@@ -1,4 +1,4 @@
-// alert("Connected");
+
 
 $(document).ready(function() {
 
@@ -9,16 +9,13 @@ var goalNumber;
 
 //Start of Game
 
-        var startGame = function() {
+var startGame = function() {
 
                 goalNumber = 0;
                 gemSum = 0;
                 $("#goalNum").text(0); 
                 $("#scoreNum").text(0); 
                 $("#inxsText").text("Press the colored gems to generate your score.");
-} 
-
-startGame();
 
 
         var createGoal = function() {
@@ -30,7 +27,7 @@ startGame();
 createGoal();
         
         goalNumber = createGoal();
-        console.log(goalNumber);
+          console.log(goalNumber);
         $("#goalNum").text(goalNumber); 
 
 
@@ -42,37 +39,38 @@ createGoal();
 
         for (i = 0; i < 4; i++) {
                 var crystalValue = crystalNumber();
-                //console.log(crystalValue);
-                $("#crystal" + (i + 1)).text(crystalValue);
+                console.log(crystalValue);
+                //$("#crystal" + (i + 1)).text(crystalValue);
                 $("#crystal" + (i + 1)).attr("crystal-val", crystalValue);
         }
+}
+startGame();
 
 // crystal calculations
 
         var chooseCrystal = function() {
            
                 var gemPress = parseInt($(this).attr("crystal-val"));
-                                console.log($(this).attr("crystal-val"));
+                                //console.log($(this).attr("crystal-val"));
                                 console.log(gemPress);
                         
                          gemSum = gemSum + gemPress;
-                                console.log(gemSum);
+                                //console.log(gemSum);
                         $("#scoreNum").text(gemSum);
 
 
                 var compareScores = function() {
-                        console.log(goalNumber);
-                        console.log(gemSum);
+                        //console.log(goalNumber);
+                        //console.log(gemSum);
                         if (goalNumber === gemSum) {
-                                alert("Wins");
+                                //alert("Wins");
                                 wins++;
                                 $("#winsNum").text(wins);
                                 $("#inxsText").text("You win! Press the blue gem if you want to play again.");
 
                         } else if (goalNumber < gemSum) {
-                                alert("Loss");
+                                //alert("Loss");
                                 loss++;
-                                console.log(loss);
                                 $("#lossNum").text(loss);
                                 $("#inxsText").text("You lose! Press the blue gem if you want to play again");
 
@@ -81,17 +79,11 @@ createGoal();
                 }
                 compareScores();
 
-}
-$(".crystal").on("click", chooseCrystal);
-
+} //chooseCrystal close bracket
 
 $("#blueCrystal").on("click", startGame);
+$(".crystal").on("click", chooseCrystal);
 
-
-
-
-//document.removeEventListener("click", startGame);
-//document.addEventListener("click", startGame);
 
 
 }); //readyFunction close

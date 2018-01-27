@@ -99,6 +99,12 @@
     margin-right: 15px;
     margin-bottom: 10px;
     border: dotted 5px purple;
+
+}
+
+.customPic {
+    width: 125px;
+    height: 180px;
 }
 
 /* Blue Gem */
@@ -118,10 +124,11 @@
 
 }
 
-/* .bkgdGreen {
-    background-image: url("assets/images/GreenGem.png");
-    background-size: 145px 190px;
-} */
+
+.sapphirePic {
+    width: 135px;
+    height: 65px;
+}
 
  /* Footer*/
 
