@@ -101,7 +101,6 @@
     border: dotted 5px purple;
 }
 
-
 /* Blue Gem */
 
 .startCrystal {
@@ -119,10 +118,10 @@
 
 }
 
-.img-fluid{
-    max-width: 100%;
-    height: auto;
-}
+/* .bkgdGreen {
+    background-image: url("assets/images/GreenGem.png");
+    background-size: 145px 190px;
+} */
 
  /* Footer*/
 
