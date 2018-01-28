@@ -14,7 +14,7 @@ var startGame = function() {
                 gemSum = 0;
                 $("#goalNum").text(0); 
                 $("#scoreNum").text(0); 
-                $("#inxsText").text("Press the colored gems to generate your score.");
+                $("#inxsText").text("Press the large colored gems to generate 'Your Score'.");
 
 
 var createGoal = function() {
