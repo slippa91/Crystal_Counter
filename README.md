@@ -1,5 +1,5 @@
 # Crystal_Counter
-Title: Hangman-Game
+Title: Crystal Counter
 Author: Susan Lippa
 Dates:  Jan 24-31, 2018 (week3)
 For:  Northwestern Coding Bootcamp
