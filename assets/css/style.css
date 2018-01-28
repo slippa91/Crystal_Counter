@@ -1,9 +1,9 @@
 .head {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lora', serif;
     width: 100%;
     margin: 0 auto;
     height: auto;
-    border-bottom: solid 5px #666;
+    border-bottom: solid 5px #05878a;
 }
 
  /* Name element */
@@ -12,8 +12,8 @@
  }
 
  .name {
-    background-color: #102dd6;
-    color: #FDFEFE;
+    background-color: #E6E6E6;
+    color: #05878a;
     text-align: center;
     font-size: 50px;
     font-weight: bold;
@@ -34,54 +34,54 @@
 }
 
 .directionsBox {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 25px;
     text-align: center;
     margin-top: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
-    color:#2D2A2A;
+    color:#074e67;
 }
 
 #dircBox {
-    background-color: violet;
+    background-color: #D8D8D8;
 }
 
 /* Instruciton Baner */
 .inxsBanner {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 25px;
     text-align: center;
     margin-top: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
-    color:#2D2A2A;
+    color:#074e67;
 }
 
 #inxsBox {
-    background-color: salmon;
+    background-color: #D8D8D8;
 }
 
 /* Wins, Goal, Score, Losses */
 
 .scoreBox {
     height: 125px;
-    background-color: yellowgreen;
-    border: dotted 5px yellow;
+    background-color: #D8D8D8;
+    border: dotted 7px #dd9933;
     margin-top: 15px;
 }
 
 .smallboxtext {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 19px;
-    color: #2D2A2A;
+    font-family: 'Trirong', serif;
+    font-size: 20px;
+    color: #67074E;
     text-align: center;
 }
 
 .smallboxnumbers {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trirong', serif;
     font-size: 25px;
-    color: #2D2A2A;
+    color: #67074E;
     text-align: center;
 
 }
@@ -98,7 +98,7 @@
     margin-top: 20px;
     margin-right: 15px;
     margin-bottom: 10px;
-    border: dotted 5px purple;
+    border: dotted 5px #5a175d;
 
 }
 
@@ -120,7 +120,7 @@
     margin-top: 10px;
     margin-bottom: 15px;
     text-align: center;
-    border: dotted 3px purple;
+    border: dotted 3px #dd9933;
 
 }
 
@@ -136,15 +136,15 @@
     width: 100%;
     margin: 0 auto;
     height: 60px;
-    background-color: #666;
+    background-color: #E6E6E6;
     bottom: 0;
-    border-top: 5px solid #102dd6;
-    border-bottom: 5px solid #102dd6;
+    border-top: 5px solid #05878a;
+    border-bottom: 5px solid #05878a;
 }
 
 .crtext {
     font-family: 'Signika Negative', sans-serif;
-    color: #FDFEFE;
+    color: #05878A;
     text-align: center;
     margin-top: 10px;
 }
