@@ -29,13 +29,13 @@
     width: 100%;
     margin: 0 auto;
     height: auto;
-    background-image: url("../images/diamonds.png");
-    background-size: 100% auto;
-}
+    background-image: url("../images/diamonds_@2X.png");
+    background-repeat: repeat;
+ }
 
 .directionsBox {
     font-family: 'Work Sans', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     margin-top: 5px;
     padding-top: 5px;
@@ -50,7 +50,8 @@
 /* Instruciton Baner */
 .inxsBanner {
     font-family: 'Work Sans', sans-serif;
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: bold;
     text-align: center;
     margin-top: 5px;
     padding-top: 5px;
@@ -69,15 +70,16 @@
     background-color: #F2F2F2;
     border: dotted 7px #dd9933;
     margin-top: 15px;
+    margin-left: 6.5%;
 }
 
-#glscBox {
-    margin-right: 5px;
+/* #glscBox {
+    margin-right: 30px;
 }
 
 #yrscBox {
     margin-left: 5px;
-}
+} */
 
 .smallboxtext {
     font-family: 'Trirong', serif;
@@ -125,7 +127,7 @@
 
 .positionCenter {
 
-    height: 75px;
+    height: 90px;
     width: 150px;;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -137,7 +139,7 @@
 
 .sapphirePic {
     width: 135px;
-    height: 65px;
+    height: 75px;
 }
 
  /* Footer*/
