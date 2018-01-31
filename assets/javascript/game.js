@@ -15,6 +15,7 @@ var startGame = function() {
                 $("#goalNum").text(0); 
                 $("#scoreNum").text(0); 
                 $("#inxsText").text("Press the large colored gems to generate 'Your Score'.");
+                
 
 
 var createGoal = function() {
@@ -65,7 +66,8 @@ var chooseCrystal = function() {
                         } else if (goalNumber < gemSum) {
                                 loss++;
                                 $("#lossNum").text(loss);
-                                $("#inxsText").text("You LOSE! Press the blue gem if you want to play again");
+                                $("#inxsText").text("You LOSE! Press the blue gem if you want to play again");  
+                               
 
                         } else {}
 
