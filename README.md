@@ -7,7 +7,7 @@ Published: GitHub <https://slippa91.github.io/Crystal_Counter/> \
 Built with: HTML5, CSS3, Boostrap3, Javascript & jQuery
 
 
-#Summary: 
+# Summary: 
 
 ![Crystal Counter](assets/images/CrystalCounter.png)
 
@@ -17,7 +17,7 @@ Attempt to TIE the 'Goal Score' with 'Your Score' by clicking on some combinatio
 
 Clicking on the blue crystal at the bottom will reset your game. The board will keep track of your wins and losses. 
 
-#Development:
+# Development:
 
 Crystal Counter is, admittedly, not a very sophisticated program but, I completed the project in week 3 of Bootcamp. At that point, it was amazing to think that I could create ANYTHING let alone a game that pretty much did what I intended.  
 
