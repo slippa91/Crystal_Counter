@@ -1,148 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
+zAQGSA<html lang="en">
+
 <head>
-    <title>Crystal Counter</title>
-    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        
-    <!-- Bootstrap - Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <title>Crystal Counter</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lora|Trirong|Work+Sans" rel="stylesheet">
+        <!-- Bootstrap - Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+                crossorigin="anonymous">
 
-    <!-- Link Style Sheet -->
-    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lora|Trirong|Work+Sans" rel="stylesheet">
+
+        <!-- Link Style Sheet -->
+        <link type="text/css" rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    
-    <div class="container">
 
-        <!-- Header Content-->
+        <div class="container">
 
-            <div class="row head">
-                <div class="col-xs-12 banner">
-                        <p class="name">Crystal Counter</p>
-                </div>  
-            </div> <!-- Header -->
+                <!-- Header Content-->
 
-        <!--Main Body Content -->
-
-            <div class="row background">
-
-                <!-- Direction Box -->
-                <div class="row directionsBox">
-                        <div class="col-xs-12 col-md-10 col-md-offset-1" id="dircBox">
-                                <p id="dircText">Try to match the 'Goal Score' to 'Your Score' by pressing the crystals below.</p>
+                <div class="row head">
+                        <div class="col-xs-12 banner">
+                                <p class="name">Crystal Counter</p>
                         </div>
-                </div>
+                </div> <!-- Header -->
 
-                <!-- Instructions Box -->
-                <div class="row inxsBanner">
-                    <div class=" col-xs-12 col-md-8 col-md-offset-2" id="inxsBox">
-                            <p id="inxsText">Press the large colored gems to generate 'Your Score'.</p>
-                    </div>
+                <!--Main Body Content -->
 
-                </div>
+                <div class="row background">
 
-                <!-- Wins, Goal, Score, Losses  -->
-                <div class="row">
-
-                    <div class="col-md-2 col-md-offset-1 scoreBox">
-                            <div class="col-md-10 col-md-offset-1">
-                                    <p class="smallboxtext">Losses</p>
-                            </div>
-                            <div class="col-md-4 col-md-offset-4">
-                                    <p class="smallboxnumbers" id="lossNum">0</p>
-                            </div>
-                    </div>
-                   
-                    <div class="col-md-2 col-md-offset-1 scoreBox" id="glscBox">
-                            <div class="col-md-10 col-md-offset-1">
-                                    <p class="smallboxtext">Goal Score</p>
-                            </div>
-                            <div class="col-md-4 col-md-offset-4">
-                                    <p class="smallboxnumbers" id="goalNum">0</p>
-                            </div>
-                    </div>
-                    
-                    <div class="col-md-2 scoreBox" id="yrscBox">
-                            <div class="col-md-10 col-md-offset-1">
-                                    <p class="smallboxtext">Your Score</p>
-                            </div>
-                            <div class="col-md-4 col-md-offset-4">
-                                <p class="smallboxnumbers" id="scoreNum">0</p>
-                            </div>
-                    </div>
-
-                    <div class="col-md-2 col-md-offset-1 scoreBox">
-                            <div class="col-md-10 col-md-offset-1">
-                                    <p class="smallboxtext">Wins</p>
-                            </div>
-                            <div class="col-md-4 col-md-offset-4">
-                                    <p class="smallboxnumbers" id="winsNum">0</p>
-                             </div>
-                    </div>
-
-                </div>
-
-                <!-- Click Gems -->
-                <div class="row">
-                        <div class="clickCrystals">
-                    <button id="crystal1" class="btn positionCrystal crystal">
-                            <img class="customPic img-responsive" src="assets/images/emerald.png" alt="Green Gem" />
-                    </button>
-                    <button id="crystal2" class="btn positionCrystal crystal">
-                                <img class="customPic img-responsive" src="assets/images/amethyst.jpg" alt="Purple Gem" />
-                        </button>
-                    <button id="crystal3" class="btn positionCrystal crystal">
-                                <img class="customPic img-responsive" src="assets/images/Ruby.png" alt="Red Gem" />
-                    </button>
-                    <button id="crystal4" class="btn positionCrystal crystal">
-                                <img class="customPic img-responsive" src="assets/images/Citrine.png" alt="Yellow Gem" />
-                    </button>
+                        <!-- Direction Box -->
+                        <div class="row directionsBox">
+                                <div class="col-xs-12 col-md-10 col-md-offset-1" id="dircBox">
+                                        <p id="dircText">Try to match the 'Goal Score' to 'Your Score' by pressing the
+                                                crystals below.</p>
+                                </div>
                         </div>
-                </div>
 
-                <!-- Blue Gem -->
-                <div class="row">
-                        <div class="startCrystal">
-                    <button id="blueCrystal" class="btn positionCenter">
-                                <img class="sapphirePic" src="assets/images/Sapphire2.png" alt="Blue Gem" />
+                        <!-- Instructions Box -->
+                        <div class="row inxsBanner">
+                                <div class=" col-xs-12 col-md-8 col-md-offset-2" id="inxsBox">
+                                        <p id="inxsText">Press the large colored gems to generate 'Your Score'.</p>
+                                </div>
 
-                    </button>  
                         </div>
-                </div>
+
+                        <!-- Wins, Goal, Score, Losses  -->
+                        <div class="row">
+
+                                <div class="col-md-2 col-md-offset-1 scoreBox">
+                                        <div class="col-md-10 col-md-offset-1">
+                                                <p class="smallboxtext">Losses</p>
+                                        </div>
+                                        <div class="col-md-4 col-md-offset-4">
+                                                <p class="smallboxnumbers" id="lossNum">0</p>
+                                        </div>
+                                </div>
+
+                                <div class="col-md-2 col-md-offset-1 scoreBox" id="glscBox">
+                                        <div class="col-md-10 col-md-offset-1">
+                                                <p class="smallboxtext">Goal Score</p>
+                                        </div>
+                                        <div class="col-md-4 col-md-offset-4">
+                                                <p class="smallboxnumbers" id="goalNum">0</p>
+                                        </div>
+                                </div>
+
+                                <div class="col-md-2 scoreBox" id="yrscBox">
+                                        <div class="col-md-10 col-md-offset-1">
+                                                <p class="smallboxtext">Your Score</p>
+                                        </div>
+                                        <div class="col-md-4 col-md-offset-4">
+                                                <p class="smallboxnumbers" id="scoreNum">0</p>
+                                        </div>
+                                </div>
+
+                                <div class="col-md-2 col-md-offset-1 scoreBox">
+                                        <div class="col-md-10 col-md-offset-1">
+                                                <p class="smallboxtext">Wins</p>
+                                        </div>
+                                        <div class="col-md-4 col-md-offset-4">
+                                                <p class="smallboxnumbers" id="winsNum">0</p>
+                                        </div>
+                                </div>
+
+                        </div>
+
+                        <!-- Click Gems -->
+                        <div class="row">
+                                <div class="clickCrystals">
+                                        <button id="crystal1" class="btn positionCrystal crystal">
+                                                <img class="customPic img-responsive" src="assets/images/emerald.png"
+                                                        alt="Green Gem" />
+                                        </button>
+                                        <button id="crystal2" class="btn positionCrystal crystal">
+                                                <img class="customPic img-responsive" src="assets/images/amethyst.jpg"
+                                                        alt="Purple Gem" />
+                                        </button>
+                                        <button id="crystal3" class="btn positionCrystal crystal">
+                                                <img class="customPic img-responsive" src="assets/images/Ruby.png" alt="Red Gem" />
+                                        </button>
+                                        <button id="crystal4" class="btn positionCrystal crystal">
+                                                <img class="customPic img-responsive" src="assets/images/Citrine.png"
+                                                        alt="Yellow Gem" />
+                                        </button>
+                                </div>
+                        </div>
+
+                        <!-- Blue Gem -->
+                        <div class="row">
+                                <div class="startCrystal">
+                                        <button id="blueCrystal" class="btn positionCenter">
+                                                <img class="sapphirePic" src="assets/images/Sapphire2.png" alt="Blue Gem" />
+
+                                        </button>
+                                </div>
+                        </div>
 
 
-            </div>  <!-- Background -->
+                </div> <!-- Background -->
 
-        <!-- Footer Content -->
+                <!-- Footer Content -->
 
-            <div class="row foot">
+                <div class="row foot">
 
-                <div class="col-xs-12">
-                        
-                    <div class="crtext">
-                            <p>&copy Copyright 2018 Susan Lippa</p>          
-                    </div>
-                
-                </div> 
-            
-            </div> <!-- Footer -->
-                
-    </div>  <!-- Container-->
+                        <div class="col-xs-12">
+
+                                <div class="crtext">
+                                        <p>&copy Copyright 2018 Susan Lippa</p>
+                                </div>
+
+                        </div>
+
+                </div> <!-- Footer -->
+
+        </div> <!-- Container-->
 
 
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
+
 </html>
